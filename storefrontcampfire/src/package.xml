@@ -4,6 +4,10 @@
         <members>SDO_B2BCommerce_ShippingSample</members>
         <name>ApexClass</name>
     </types>
+    <types>
+        <members>Campfire_Instant_Storefront_Initialize</members>
+        <name>Flow</name>
+    </types>
     <!--<types>
         <members>*</members>
         <name>ApexComponent</name>
