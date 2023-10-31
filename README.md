@@ -8,5 +8,7 @@
 This repository contains helper classes and configurations that will be used for the campfire session. Click the link above to install them into your Salesforce developer org that was created for the session.
 
 # Included Files
-* storefrontcampfire/src/classes/SDO_B2BCommerce_ShippingSample.cls - Used for Sample Shipping Calculations
-* storefrontcampfire/src/flows/Campfire_Instant_Storefront_Initialize.flow-meta.xml - Used for org initialization
+* storefrontcampfire/src/classes/SDO_B2BCommerce_ShippingSample.cls
+  - Used for Sample Shipping Calculations
+* storefrontcampfire/src/flows/Campfire_Instant_Storefront_Initialize.flow-meta.xml
+  - Used for org initialization
