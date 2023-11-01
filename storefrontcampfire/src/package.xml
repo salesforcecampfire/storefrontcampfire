@@ -5,6 +5,7 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>Campfire_Instant_Storefront_Invite_to_Reorder_Portal</members>
         <members>Campfire_Instant_Storefront_Initialize</members>
         <name>Flow</name>
     </types>
