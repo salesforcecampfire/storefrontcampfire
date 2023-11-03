@@ -47,6 +47,62 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordCreates>
+        <name>Contact_Point_Address</name>
+        <label>Contact Point Address</label>
+        <locationX>176</locationX>
+        <locationY>890</locationY>
+        <inputAssignments>
+            <field>AddressType</field>
+            <value>
+                <stringValue>Shipping</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>City</field>
+            <value>
+                <stringValue>San Francisco</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Country</field>
+            <value>
+                <stringValue>US</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>IsDefault</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>Get_Burlington_Textiles.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>PostalCode</field>
+            <value>
+                <stringValue>94105</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>State</field>
+            <value>
+                <stringValue>CA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Street</field>
+            <value>
+                <stringValue>1 Market St</stringValue>
+            </value>
+        </inputAssignments>
+        <object>ContactPointAddress</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
         <name>Create_Permission_Set</name>
         <label>Create Permission Set</label>
         <locationX>176</locationX>
@@ -117,6 +173,27 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
+        <name>Get_Burlington_Textiles</name>
+        <label>Get Burlington Textiles</label>
+        <locationX>176</locationX>
+        <locationY>782</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Contact_Point_Address</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Burlington Textiles</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>Get_Roles</name>
         <label>Get Roles</label>
         <locationX>176</locationX>
@@ -163,6 +240,9 @@
         <label>Update User Role</label>
         <locationX>176</locationX>
         <locationY>674</locationY>
+        <connector>
+            <targetReference>Get_Burlington_Textiles</targetReference>
+        </connector>
         <filterLogic>and</filterLogic>
         <filters>
             <field>Id</field>
