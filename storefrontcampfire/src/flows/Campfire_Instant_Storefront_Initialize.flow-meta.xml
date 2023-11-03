@@ -67,7 +67,7 @@
             </value>
         </inputAssignments>
         <inputAssignments>
-            <field>PermissionsInviteBuyerToReorderPortal__NotFound</field>
+            <field>PermissionsInviteBuyerToReorderPortal</field>
             <value>
                 <booleanValue>true</booleanValue>
             </value>
